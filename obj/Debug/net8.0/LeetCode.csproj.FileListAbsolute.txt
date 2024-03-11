@@ -1,0 +1,14 @@
+D:\OneDrive\Desktop\LeetCode\LeetCode\bin\Debug\net8.0\LeetCode.exe
+D:\OneDrive\Desktop\LeetCode\LeetCode\bin\Debug\net8.0\LeetCode.deps.json
+D:\OneDrive\Desktop\LeetCode\LeetCode\bin\Debug\net8.0\LeetCode.runtimeconfig.json
+D:\OneDrive\Desktop\LeetCode\LeetCode\bin\Debug\net8.0\LeetCode.dll
+D:\OneDrive\Desktop\LeetCode\LeetCode\bin\Debug\net8.0\LeetCode.pdb
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\LeetCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\LeetCode.AssemblyInfoInputs.cache
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\LeetCode.AssemblyInfo.cs
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\LeetCode.csproj.CoreCompileInputs.cache
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\LeetCode.dll
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\refint\LeetCode.dll
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\LeetCode.pdb
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\LeetCode.genruntimeconfig.cache
+D:\OneDrive\Desktop\LeetCode\LeetCode\obj\Debug\net8.0\ref\LeetCode.dll
