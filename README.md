@@ -1,2 +1,3 @@
-# LeetCode
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+# LeetCode Solutions
+
+![C#](https://img.shields.io/badge/language-C%23-blue)
