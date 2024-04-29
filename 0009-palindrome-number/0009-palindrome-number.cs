@@ -1,4 +1,5 @@
-public class Solution {
+public class Solution 
+{
     public bool IsPalindrome(int x) 
     {
         if (x < 0 || (x % 10 == 0 && x != 0))
