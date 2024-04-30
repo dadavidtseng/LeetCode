@@ -16,15 +16,11 @@ public class Solution
         
         foreach (var c in s)
         {
-            if (bracketDictionary.ContainsKey(c))
-                stack.Push(c);
-            else
-            {
-                if (stack.Count == 0 || bracketDictionary[stack.Peek()] != c)
-                    return false;
-                
-                stack.Pop();
-            }
+            if (bracketDictionary.TryGetValue(c, out var correspondingBracket))
+                stack.Push(correspondingBracket);
+            
+            else if (stack.Count == 0 || stack.Pop() != c)
+                return false;
         }
         
         return stack.Count == 0;
