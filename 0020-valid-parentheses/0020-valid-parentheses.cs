@@ -2,31 +2,27 @@ public class Solution
 {
     public bool IsValid(string s) 
     {
-        if (s.Length % 2 != 0)
-            return false;
-        
-        var bracketDictionary = new Dictionary<char, char>()
-                              {
-                                  { '(', ')' },
-                                  { '[', ']' },
-                                  { '{', '}' }
-                              };
-        
+        var bracketPairs = new Dictionary<char, char>()
+                           {
+                               { '(', ')' },
+                               { '[', ']' },
+                               { '{', '}' }
+                           };
+
         var stack = new Stack<char>();
-        
+
         foreach (var c in s)
         {
-            if (bracketDictionary.ContainsKey(c))
-                stack.Push(c);
-            else
+            if (bracketPairs.TryGetValue(c, out var value))
             {
-                if (stack.Count == 0 || bracketDictionary[stack.Peek()] != c)
-                    return false;
-                
-                stack.Pop();
+                stack.Push(value);
+            }
+            else if (stack.Count == 0 || stack.Pop() != c)
+            {
+                return false;
             }
         }
-        
+
         return stack.Count == 0;
     }
 }
