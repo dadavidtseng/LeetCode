@@ -14,13 +14,10 @@ public class Solution
         foreach (var c in s)
         {
             if (bracketPairs.TryGetValue(c, out var value))
-            {
                 stack.Push(value);
-            }
+
             else if (stack.Count == 0 || stack.Pop() != c)
-            {
                 return false;
-            }
         }
 
         return stack.Count == 0;
