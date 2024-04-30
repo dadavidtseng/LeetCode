@@ -2,25 +2,15 @@ public class Solution
 {
     public int RemoveDuplicates(int[] nums) 
     {
-        var numsList = new List<int>();
+        if (nums.Length == 0)
+            return 0;
 
-        foreach (var num in nums)
-        {
-            if (!numsList.Contains(num))
-                numsList.Add(num);
-        }
+        var j = 0;
 
-        Array.Clear(nums);
-        var numsArray = numsList.ToArray();
+        for (var i = 1; i < nums.Length; i++)
+            if (nums[j] != nums[i])
+                nums[++j] = nums[i];
 
-        for (var i = 0; i < nums.Length; i++)
-        {
-            if (i >= numsList.Count)
-                continue;
-
-            nums[i] = numsArray[i];
-        }
-
-        return numsList.Count;
+        return j + 1;
     }
 }
