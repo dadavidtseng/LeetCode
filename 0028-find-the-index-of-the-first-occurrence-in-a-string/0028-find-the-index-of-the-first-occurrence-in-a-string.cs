@@ -2,9 +2,10 @@ public class Solution
 {
     public int StrStr(string haystack, string needle) 
     {
-        if (!haystack.Contains(needle))
-            return -1;
-        
-        return haystack.IndexOf(needle, StringComparison.Ordinal);        
+        for (var i = 0; i <= haystack.Length - needle.Length; ++i)
+            if (haystack.Substring(i, needle.Length) == needle)
+                return i;
+
+        return -1;      
     }
 }
